@@ -1,0 +1,72 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    background-color: #c7c7c7;
+}
+.container{
+    min-width: 27%;
+    border-radius: 4px;
+    box-shadow: 1px 1px 10px #808080,-1px -1px 10px #808080;
+    padding: 15px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #ffffff;
+}
+.modal__title{
+    margin: 0 0 10px;
+}
+.modal-list{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.modal-list li{
+    padding: 10px 20px;
+    margin: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-size: 17px;
+    font-weight: 600;
+    background-color: rgb(2, 159, 216);
+    color: #fff;
+}
+.modal-list li:hover{
+    color: #000000;
+    box-shadow: 1px 1px 10px #7f7f7f;
+}
+.modal-content{
+    margin-top: 30px;
+}
+.modal-box{
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    display: none;
+    transition: 0.5s;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+}
+.modal-box h2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+}
+.modal-box h2 .close__modal{
+    cursor: pointer;
+}
+.modal-box.active{
+    display: block;
+}
